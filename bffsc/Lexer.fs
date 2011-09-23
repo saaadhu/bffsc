@@ -1,4 +1,5 @@
 ﻿module Lexer
+open Opcodes
 
 let get_opcode char =
     match char with
@@ -10,4 +11,4 @@ let get_opcode char =
     | '.' -> Output
     | '[' -> LoopStart
     | ']' -> LoopEnd
-    | _ -> failwith ("Illegal character " + char.ToString())
+    | _ -> Unknown

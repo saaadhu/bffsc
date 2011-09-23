@@ -11,4 +11,5 @@ type opcode =
     | Output
     | LoopStart
     | LoopEnd
+    | Unknown
 

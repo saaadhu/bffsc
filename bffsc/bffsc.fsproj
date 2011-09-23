@@ -8,7 +8,7 @@
     <ProjectGuid>{ffe64c09-e103-4d72-ad73-724211334248}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ConsoleApplication2</RootNamespace>
-    <AssemblyName>ConsoleApplication2</AssemblyName>
+    <AssemblyName>bffsc</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <Name>bffsc</Name>
@@ -43,9 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Opcodes.fs" />
+    <Compile Include="Lexer.fs" />
     <Compile Include="AvrBackend.fs" />
-    <Compile Include="Program.fs" />
     <Compile Include="HexFile.fs" />
+    <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />

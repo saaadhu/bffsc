@@ -30,5 +30,4 @@ let get_hex_file_contents (machine_code:seq<int>) =
     let sum = calculate_sum body
     let checksum = ((sum &&& 0xFF) ^^^ 0xFF) + 1
 
-    ":" + body + String.Format("{0:X2}", checksum)
-
+    ":" + body + String.Format("{0:X2}", checksum) + Environment.NewLine + ":00000001FF"
